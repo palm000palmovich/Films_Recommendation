@@ -3,12 +3,12 @@ import java.util.List;
 
 public class User {
     private int age;
-    private List<Movie> bestFilms = new ArrayList<>();
-    private List<Movie> watchLater = new ArrayList<>();
+    private Movie bestFilms;
+    private Movie watchLater;
 
 
     //Конструктор
-    public User(int age, List<Movie> bestFilms, List<Movie> watchLater) {
+    public User(int age, Movie bestFilms, Movie watchLater) {
         this.age = age;
         this.bestFilms = bestFilms;
         this.watchLater = watchLater;
@@ -25,19 +25,19 @@ public class User {
         this.age = age;
     }
 
-    public List<Movie> getBestFilms() {
+    public Movie getBestFilms() {
         return bestFilms;
     }
 
-    public void setBestFilms(List<Movie> bestFilms) {
+    public void setBestFilms(Movie bestFilms) {
         this.bestFilms = bestFilms;
     }
 
-    public List<Movie> getWatchLater() {
+    public Movie getWatchLater() {
         return watchLater;
     }
 
-    public void setWatchLater(List<Movie> watchLater) {
+    public void setWatchLater(Movie watchLater) {
         this.watchLater = watchLater;
     }
 
